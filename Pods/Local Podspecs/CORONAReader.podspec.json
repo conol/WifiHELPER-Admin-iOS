@@ -1,0 +1,27 @@
+{
+  "name": "CORONAReader",
+  "version": "0.2.2",
+  "summary": "コノル製デバイス専用ライブラリ",
+  "description": "デバイスのNFC認証を開始後、Bluetoothを利用したデータ送受信、Wifi経由でのAPI利用などの各種機能を提供するライブラリです。",
+  "homepage": "https://gitlab.conol.jp/IoT/CORONAReader",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mizota": "contact@conol.jp"
+  },
+  "source": {
+    "git": "https://gitlab.conol.jp/IoT/CORONAReader.git",
+    "tag": "0.2.2"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "source_files": "CORONAReader/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "CoreBluetooth",
+    "CoreNFC"
+  ]
+}

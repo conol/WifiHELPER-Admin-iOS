@@ -1,0 +1,31 @@
+PODS:
+  - CORONAReader (0.2.2)
+  - CORONAWriter (0.2.2)
+
+DEPENDENCIES:
+  - CORONAReader (from `https://gitlab.conol.jp/IoT/CORONAReader-iOS.git`, branch `develop`)
+  - CORONAWriter (from `https://gitlab.conol.jp/IoT/CORONAWriter-iOS.git`, branch `develop`)
+
+EXTERNAL SOURCES:
+  CORONAReader:
+    :branch: develop
+    :git: https://gitlab.conol.jp/IoT/CORONAReader-iOS.git
+  CORONAWriter:
+    :branch: develop
+    :git: https://gitlab.conol.jp/IoT/CORONAWriter-iOS.git
+
+CHECKOUT OPTIONS:
+  CORONAReader:
+    :commit: 342cb53e297657b9460d42a9e2cc88bc0e41f08b
+    :git: https://gitlab.conol.jp/IoT/CORONAReader-iOS.git
+  CORONAWriter:
+    :commit: ba5f0a735dacf5e041df7965b5d60cd9c11b00d2
+    :git: https://gitlab.conol.jp/IoT/CORONAWriter-iOS.git
+
+SPEC CHECKSUMS:
+  CORONAReader: a340d63c1c0bb2eeeea2b5acfcbbb3225b5189ae
+  CORONAWriter: a3511e1412d37924b1401aa724aaf314463d63b1
+
+PODFILE CHECKSUM: 8f44ece7b8a07180e8e7687fc5063f2d3a028986
+
+COCOAPODS: 1.3.1
