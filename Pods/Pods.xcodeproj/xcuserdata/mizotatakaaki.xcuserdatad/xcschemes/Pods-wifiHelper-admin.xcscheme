@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0700"
+   LastUpgradeVersion = "0900"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0ACA8D0F466949FE2FC7C1506C2740B1"
+               BlueprintIdentifier = "62BD9F79EB5BCDFE8C81E86DB733DA60"
                BuildableName = "Pods_wifiHelper_admin.framework"
                BlueprintName = "Pods-wifiHelper-admin"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0ACA8D0F466949FE2FC7C1506C2740B1"
+            BlueprintIdentifier = "62BD9F79EB5BCDFE8C81E86DB733DA60"
             BuildableName = "Pods_wifiHelper_admin.framework"
             BlueprintName = "Pods-wifiHelper-admin"
             ReferencedContainer = "container:Pods.xcodeproj">

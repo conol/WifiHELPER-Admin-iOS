@@ -4,7 +4,6 @@ platform :ios, '11.0'
 def install_pods
 
 pod 'CORONAWriter', :git => 'https://gitlab.conol.jp/IoT/CORONAWriter-iOS.git', :branch => 'develop'
-pod 'CORONAReader', :git => 'https://gitlab.conol.jp/IoT/CORONAReader-iOS.git', :branch => 'develop'
 #pod 'IDZSwiftCommonCrypto', '~> 0.9.2'
 
 end

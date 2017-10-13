@@ -3,44 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		13CFD00A3FF0ECD703464969A7D832DD /* CORONAReader-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4413093759613F266EC7FBAEBF9D74B0 /* CORONAReader-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		165A13D1B4DFF6EDA2DEDF9255FD5E03 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AA07926CA7A8016E150A5832A55D35 /* Foundation.framework */; };
-		20C9998C3E297CF1551D47374F20E879 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2AF5CBF0528A3A2548C0C77F8B7178C /* NFCReader.swift */; };
 		496BE5D7905E16B6C1A138CD8299CADC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBAEC5B7122575EAEB3DA5AE68E1A70 /* UIKit.framework */; };
-		58A3FEC69C0F0A2263B853E3084C6CF5 /* Pods-wifiHelper-admin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F1E79A1DA06A8362F3A7664415E5AD /* Pods-wifiHelper-admin-dummy.m */; };
-		6F03A0B2192257AC8390E94D561528F8 /* CORONAReader-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26706DC5778B27967BA6FC973FED9683 /* CORONAReader-dummy.m */; };
-		76100B00E52E2C7F413D71F776BB9F91 /* CORONAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C87CC7A4F538981B4941ECE736AF2EE /* CORONAManager.swift */; };
+		50C6E697C6D679C0E8489E8479066331 /* Pods-wifiHelper-admin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B036C99CA98C0A9FBFAEFEF45FA2904 /* Pods-wifiHelper-admin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76100B00E52E2C7F413D71F776BB9F91 /* CORONAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D48C1C8E39FE4E38191FC42B32E5FEB /* CORONAManager.swift */; };
 		7CF5E48E16838D6BD85418A85AEF3F3E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AA07926CA7A8016E150A5832A55D35 /* Foundation.framework */; };
-		7EED593CACC157D5599F75FDBE41D87B /* CORONAWriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC9B8D35D7067C947E83C5F264E8C1B /* CORONAWriter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EED593CACC157D5599F75FDBE41D87B /* CORONAWriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28CF6F2D31850114F0F6DA81C5C05F7F /* CORONAWriter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		824DB28C7B35F14313A0DD5E76935EC3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A408B6BA687EE6AF8D83F715309444 /* CoreBluetooth.framework */; };
-		92C6B5BDB9277C2105E1E999D5C6342C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AA07926CA7A8016E150A5832A55D35 /* Foundation.framework */; };
-		A0C4C9ED0F4F7564FCAF4E14374EAED4 /* CORONAWriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBA5F221A6FAC79AE1B328367D062D9E /* CORONAWriter-dummy.m */; };
-		ACA9BC04D0D52D8B1DC35493F34A01BF /* CORONAManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F330CE079A0BEE3470ECD962436C6A0 /* CORONAManager.swift */; };
-		C2714E63FE6A0CA1025E824ED6DE316C /* CORONABTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B228381320FC932B8F26C5F3E7FA733 /* CORONABTManager.swift */; };
-		CDA9D1AC05FEB80C2CDC4FA7C979A0F9 /* CORONABTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08C6E3CF368D8C7B6CC1A44D2A45F31 /* CORONABTManager.swift */; };
-		CFB256E47336E82D8CC3D0251EDE4849 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14A408B6BA687EE6AF8D83F715309444 /* CoreBluetooth.framework */; };
-		D1016646AA7150BA042D768E58850C04 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF15CFA0620C941632C334A8C83D2E6E /* NFCReader.swift */; };
-		E10D36CCD8FAC202DB4C815C1F09BB21 /* CORONAReader.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D9B8BC9DE038691BC857E4CA5D6548 /* CORONAReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C4C9ED0F4F7564FCAF4E14374EAED4 /* CORONAWriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DA190868AEC68A2F6165EEE497941582 /* CORONAWriter-dummy.m */; };
+		C034A92DA6DF227F52698B720BA01E3B /* Pods-wifiHelper-admin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F1E79A1DA06A8362F3A7664415E5AD /* Pods-wifiHelper-admin-dummy.m */; };
+		C2714E63FE6A0CA1025E824ED6DE316C /* CORONABTManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090F3602AB31F281F1EE31EAB6E50B4F /* CORONABTManager.swift */; };
+		D1016646AA7150BA042D768E58850C04 /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D03EE2CF07A49E9AD2DB425F1DC18FF /* NFCReader.swift */; };
 		EB15D2EF9EDE444A102FEB4A250B7EE1 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158BEDC03643680EFC4182B6ACA7C44E /* CoreNFC.framework */; };
-		ED2649ED5E00F2E705BE3FC368A546B6 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 158BEDC03643680EFC4182B6ACA7C44E /* CoreNFC.framework */; };
-		F0757835434CA26FFE183DCE13A77318 /* CORONAWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CF6316CD2584D2AF3D201F646F1B084 /* CORONAWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDFC84B584A422A12BBABBA91ADC1024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBAEC5B7122575EAEB3DA5AE68E1A70 /* UIKit.framework */; };
-		FF8E33012BD23F6DFCA8CD3FB67E1F2C /* Pods-wifiHelper-admin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B036C99CA98C0A9FBFAEFEF45FA2904 /* Pods-wifiHelper-admin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED3742E112CFDFC02083CD5C77D184A4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0AA07926CA7A8016E150A5832A55D35 /* Foundation.framework */; };
+		F0757835434CA26FFE183DCE13A77318 /* CORONAWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = F496124310D4D18991D70683C1A38E5D /* CORONAWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		273F69EF909F3E3DCE2A0244DBCAB86F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F1D62A32E655BAC597EE24943935309B;
-			remoteInfo = CORONAReader;
-		};
-		5195627CAC1D6E8BD49F5E041A8B9C0F /* PBXContainerItemProxy */ = {
+		56726B9B57FA28EEFB679F3D6FE0977D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -50,66 +33,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		064FC70F015DCB3EBB945EF0A87F213E /* CORONAWriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CORONAWriter-prefix.pch"; sourceTree = "<group>"; };
+		090F3602AB31F281F1EE31EAB6E50B4F /* CORONABTManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONABTManager.swift; path = CORONAWriter/Classes/CORONABTManager.swift; sourceTree = "<group>"; };
 		0EBAEC5B7122575EAEB3DA5AE68E1A70 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		14A408B6BA687EE6AF8D83F715309444 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreBluetooth.framework; sourceTree = DEVELOPER_DIR; };
 		158BEDC03643680EFC4182B6ACA7C44E /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreNFC.framework; sourceTree = DEVELOPER_DIR; };
 		18560605A795645E77E5DA1A81118940 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1AC9F465C69434D1516471A2723D66EF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B228381320FC932B8F26C5F3E7FA733 /* CORONABTManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONABTManager.swift; path = CORONAWriter/Classes/CORONABTManager.swift; sourceTree = "<group>"; };
-		1CF6316CD2584D2AF3D201F646F1B084 /* CORONAWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CORONAWriter.h; path = CORONAWriter/Classes/CORONAWriter.h; sourceTree = "<group>"; };
+		1E39E1219B13DAF61E1501940138BBB3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22C76D3011FE17F368455F1577E8E06F /* Pods-wifiHelper-admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wifiHelper-admin.release.xcconfig"; sourceTree = "<group>"; };
-		26706DC5778B27967BA6FC973FED9683 /* CORONAReader-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CORONAReader-dummy.m"; sourceTree = "<group>"; };
+		28CF6F2D31850114F0F6DA81C5C05F7F /* CORONAWriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CORONAWriter-umbrella.h"; sourceTree = "<group>"; };
+		2D03EE2CF07A49E9AD2DB425F1DC18FF /* NFCReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFCReader.swift; path = CORONAWriter/Classes/NFCReader.swift; sourceTree = "<group>"; };
+		2D7D146D57BEE319F5FB712B3293DA78 /* CORONAWriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CORONAWriter.xcconfig; sourceTree = "<group>"; };
 		331EE774C672C8907C36234C94917A36 /* Pods-wifiHelper-admin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wifiHelper-admin-resources.sh"; sourceTree = "<group>"; };
-		4413093759613F266EC7FBAEBF9D74B0 /* CORONAReader-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CORONAReader-umbrella.h"; sourceTree = "<group>"; };
-		483AAE3BB3C3671BC3CA388CEA6B4FF7 /* CORONAReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CORONAReader.xcconfig; sourceTree = "<group>"; };
-		4C23EF00901A6D3BA0932371937C1355 /* CORONAWriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CORONAWriter.xcconfig; sourceTree = "<group>"; };
 		5483F6D838D4ACB1122BEBEE696BD878 /* Pods-wifiHelper-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wifiHelper-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		5BBEF8D3CB218AA775C87917F0E0EB91 /* Pods-wifiHelper-admin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wifiHelper-admin-frameworks.sh"; sourceTree = "<group>"; };
-		68429389354398F58451DF4C59416602 /* CORONAReader.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CORONAReader.modulemap; sourceTree = "<group>"; };
-		689FD895E6806200BABCBEAD99409FA2 /* Pods-wifiHelper-admin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-wifiHelper-admin.modulemap"; sourceTree = "<group>"; };
-		6934A6361EF4EE8C09CB688DC8A6CD39 /* Pods_wifiHelper_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wifiHelper_admin.framework; path = "Pods-wifiHelper-admin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C87CC7A4F538981B4941ECE736AF2EE /* CORONAManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONAManager.swift; path = CORONAWriter/Classes/CORONAManager.swift; sourceTree = "<group>"; };
+		689FD895E6806200BABCBEAD99409FA2 /* Pods-wifiHelper-admin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-wifiHelper-admin.modulemap"; sourceTree = "<group>"; };
 		71EE1BD31D120A3088885C8467316927 /* Pods-wifiHelper-admin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wifiHelper-admin-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B7BBA41901B563A6BB18BDE78052EA2 /* Pods_wifiHelper_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wifiHelper_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B036C99CA98C0A9FBFAEFEF45FA2904 /* Pods-wifiHelper-admin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wifiHelper-admin-umbrella.h"; sourceTree = "<group>"; };
-		8F330CE079A0BEE3470ECD962436C6A0 /* CORONAManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONAManager.swift; path = CORONAReader/Classes/CORONAManager.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A08C6E3CF368D8C7B6CC1A44D2A45F31 /* CORONABTManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONABTManager.swift; path = CORONAReader/Classes/CORONABTManager.swift; sourceTree = "<group>"; };
-		A88EFC3A1146F17DC52D214598B36FAA /* CORONAWriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CORONAWriter.modulemap; sourceTree = "<group>"; };
-		C8F80023A75417C3C6CEB02DBA16B9EF /* CORONAReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CORONAReader.framework; path = CORONAReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D48C1C8E39FE4E38191FC42B32E5FEB /* CORONAManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONAManager.swift; path = CORONAWriter/Classes/CORONAManager.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A596413BA6D3A306BD844C0DFE708D /* CORONAWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CORONAWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47A2648DA0272A32EC46AB6FB63967D /* CORONAWriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CORONAWriter.modulemap; sourceTree = "<group>"; };
 		CB945A989B20718B683C2972B0A23D71 /* Pods-wifiHelper-admin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wifiHelper-admin-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CBA5F221A6FAC79AE1B328367D062D9E /* CORONAWriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CORONAWriter-dummy.m"; sourceTree = "<group>"; };
 		D0AA07926CA7A8016E150A5832A55D35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D2AF5CBF0528A3A2548C0C77F8B7178C /* NFCReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFCReader.swift; path = CORONAReader/Classes/NFCReader.swift; sourceTree = "<group>"; };
-		DAD9D6610A504C56BC72A01B58CED0FF /* CORONAWriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CORONAWriter-prefix.pch"; sourceTree = "<group>"; };
-		DBC9B8D35D7067C947E83C5F264E8C1B /* CORONAWriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CORONAWriter-umbrella.h"; sourceTree = "<group>"; };
-		EE53D9B90D784E800F7359CC7B9833BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE5C66BA414762ABB7D69669865B431D /* CORONAWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CORONAWriter.framework; path = CORONAWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EF15CFA0620C941632C334A8C83D2E6E /* NFCReader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NFCReader.swift; path = CORONAWriter/Classes/NFCReader.swift; sourceTree = "<group>"; };
-		F4D9B8BC9DE038691BC857E4CA5D6548 /* CORONAReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CORONAReader.h; path = CORONAReader/Classes/CORONAReader.h; sourceTree = "<group>"; };
+		DA190868AEC68A2F6165EEE497941582 /* CORONAWriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CORONAWriter-dummy.m"; sourceTree = "<group>"; };
+		F496124310D4D18991D70683C1A38E5D /* CORONAWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CORONAWriter.h; path = CORONAWriter/Classes/CORONAWriter.h; sourceTree = "<group>"; };
 		F9F1E79A1DA06A8362F3A7664415E5AD /* Pods-wifiHelper-admin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-wifiHelper-admin-dummy.m"; sourceTree = "<group>"; };
-		FC39ECD79EBA0461146258A2F64639B1 /* CORONAReader-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CORONAReader-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D39E8466F6AE39A0BDCE0BF85BFEC1A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				92C6B5BDB9277C2105E1E999D5C6342C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		34F710E2C08472DE41FC5A7D9FCCB4FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFB256E47336E82D8CC3D0251EDE4849 /* CoreBluetooth.framework in Frameworks */,
-				ED2649ED5E00F2E705BE3FC368A546B6 /* CoreNFC.framework in Frameworks */,
-				165A13D1B4DFF6EDA2DEDF9255FD5E03 /* Foundation.framework in Frameworks */,
-				FDFC84B584A422A12BBABBA91ADC1024 /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D2F65EEA1B80F73627E909B1F734A187 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -118,6 +71,14 @@
 				EB15D2EF9EDE444A102FEB4A250B7EE1 /* CoreNFC.framework in Frameworks */,
 				7CF5E48E16838D6BD85418A85AEF3F3E /* Foundation.framework in Frameworks */,
 				496BE5D7905E16B6C1A138CD8299CADC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD281E0281BC0BED4F701AC7A31C2814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED3742E112CFDFC02083CD5C77D184A4 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,18 +130,18 @@
 			path = "Target Support Files/Pods-wifiHelper-admin";
 			sourceTree = "<group>";
 		};
-		5EBB27B9A712C8A7587B598204B27962 /* Support Files */ = {
+		7B12F1F505B07F982058309BDF764D2C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				68429389354398F58451DF4C59416602 /* CORONAReader.modulemap */,
-				483AAE3BB3C3671BC3CA388CEA6B4FF7 /* CORONAReader.xcconfig */,
-				26706DC5778B27967BA6FC973FED9683 /* CORONAReader-dummy.m */,
-				FC39ECD79EBA0461146258A2F64639B1 /* CORONAReader-prefix.pch */,
-				4413093759613F266EC7FBAEBF9D74B0 /* CORONAReader-umbrella.h */,
-				1AC9F465C69434D1516471A2723D66EF /* Info.plist */,
+				C47A2648DA0272A32EC46AB6FB63967D /* CORONAWriter.modulemap */,
+				2D7D146D57BEE319F5FB712B3293DA78 /* CORONAWriter.xcconfig */,
+				DA190868AEC68A2F6165EEE497941582 /* CORONAWriter-dummy.m */,
+				064FC70F015DCB3EBB945EF0A87F213E /* CORONAWriter-prefix.pch */,
+				28CF6F2D31850114F0F6DA81C5C05F7F /* CORONAWriter-umbrella.h */,
+				1E39E1219B13DAF61E1501940138BBB3 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CORONAReader";
+			path = "../Target Support Files/CORONAWriter";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -188,69 +149,39 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				7E26B548199EAA5B5654DAF5D2458481 /* Pods */,
-				D58B4B1413A5D662C23F655CA17A5564 /* Products */,
+				E1CE0F55C95A8B214F216285F1E4E1B4 /* Pods */,
+				84A9F89807F25685AF3E7A4CC1769E06 /* Products */,
 				1848CD3ED45352C3034638796B1DE649 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		7E26B548199EAA5B5654DAF5D2458481 /* Pods */ = {
+		84A9F89807F25685AF3E7A4CC1769E06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8F7882BE3BF56A05ECA9ADBF01867D36 /* CORONAReader */,
-				E0ACD705F07553187A8A747B336B62E4 /* CORONAWriter */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		81F735752F8FC55D5B53EAAD0E8D3E0C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A88EFC3A1146F17DC52D214598B36FAA /* CORONAWriter.modulemap */,
-				4C23EF00901A6D3BA0932371937C1355 /* CORONAWriter.xcconfig */,
-				CBA5F221A6FAC79AE1B328367D062D9E /* CORONAWriter-dummy.m */,
-				DAD9D6610A504C56BC72A01B58CED0FF /* CORONAWriter-prefix.pch */,
-				DBC9B8D35D7067C947E83C5F264E8C1B /* CORONAWriter-umbrella.h */,
-				EE53D9B90D784E800F7359CC7B9833BE /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/CORONAWriter";
-			sourceTree = "<group>";
-		};
-		8F7882BE3BF56A05ECA9ADBF01867D36 /* CORONAReader */ = {
-			isa = PBXGroup;
-			children = (
-				A08C6E3CF368D8C7B6CC1A44D2A45F31 /* CORONABTManager.swift */,
-				8F330CE079A0BEE3470ECD962436C6A0 /* CORONAManager.swift */,
-				F4D9B8BC9DE038691BC857E4CA5D6548 /* CORONAReader.h */,
-				D2AF5CBF0528A3A2548C0C77F8B7178C /* NFCReader.swift */,
-				5EBB27B9A712C8A7587B598204B27962 /* Support Files */,
-			);
-			name = CORONAReader;
-			path = CORONAReader;
-			sourceTree = "<group>";
-		};
-		D58B4B1413A5D662C23F655CA17A5564 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C8F80023A75417C3C6CEB02DBA16B9EF /* CORONAReader.framework */,
-				EE5C66BA414762ABB7D69669865B431D /* CORONAWriter.framework */,
-				6934A6361EF4EE8C09CB688DC8A6CD39 /* Pods_wifiHelper_admin.framework */,
+				95A596413BA6D3A306BD844C0DFE708D /* CORONAWriter.framework */,
+				7B7BBA41901B563A6BB18BDE78052EA2 /* Pods_wifiHelper_admin.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E0ACD705F07553187A8A747B336B62E4 /* CORONAWriter */ = {
+		A98DE701C2B8E9C373893947302ECE93 /* CORONAWriter */ = {
 			isa = PBXGroup;
 			children = (
-				1B228381320FC932B8F26C5F3E7FA733 /* CORONABTManager.swift */,
-				6C87CC7A4F538981B4941ECE736AF2EE /* CORONAManager.swift */,
-				1CF6316CD2584D2AF3D201F646F1B084 /* CORONAWriter.h */,
-				EF15CFA0620C941632C334A8C83D2E6E /* NFCReader.swift */,
-				81F735752F8FC55D5B53EAAD0E8D3E0C /* Support Files */,
+				090F3602AB31F281F1EE31EAB6E50B4F /* CORONABTManager.swift */,
+				8D48C1C8E39FE4E38191FC42B32E5FEB /* CORONAManager.swift */,
+				F496124310D4D18991D70683C1A38E5D /* CORONAWriter.h */,
+				2D03EE2CF07A49E9AD2DB425F1DC18FF /* NFCReader.swift */,
+				7B12F1F505B07F982058309BDF764D2C /* Support Files */,
 			);
-			name = CORONAWriter;
 			path = CORONAWriter;
+			sourceTree = "<group>";
+		};
+		E1CE0F55C95A8B214F216285F1E4E1B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A98DE701C2B8E9C373893947302ECE93 /* CORONAWriter */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,45 +196,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		795C340063F825E86B50213631BA3A5E /* Headers */ = {
+		9EA728278363D9540110F92248FB1074 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF8E33012BD23F6DFCA8CD3FB67E1F2C /* Pods-wifiHelper-admin-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E77B749EC9DF9049402A427301AFD751 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				13CFD00A3FF0ECD703464969A7D832DD /* CORONAReader-umbrella.h in Headers */,
-				E10D36CCD8FAC202DB4C815C1F09BB21 /* CORONAReader.h in Headers */,
+				50C6E697C6D679C0E8489E8479066331 /* Pods-wifiHelper-admin-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0ACA8D0F466949FE2FC7C1506C2740B1 /* Pods-wifiHelper-admin */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 533A702AC4805D18FBA68D425274794C /* Build configuration list for PBXNativeTarget "Pods-wifiHelper-admin" */;
-			buildPhases = (
-				428FB23A34FFBEF7036638C2F2812089 /* Sources */,
-				2D39E8466F6AE39A0BDCE0BF85BFEC1A /* Frameworks */,
-				795C340063F825E86B50213631BA3A5E /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B400BA9592D8B1C2F8181C412B7E3577 /* PBXTargetDependency */,
-				E5FC3B10ED58D69DCA15782F535F0B57 /* PBXTargetDependency */,
-			);
-			name = "Pods-wifiHelper-admin";
-			productName = "Pods-wifiHelper-admin";
-			productReference = 6934A6361EF4EE8C09CB688DC8A6CD39 /* Pods_wifiHelper_admin.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		119BCB7B4F869A0700E94136B4AEE11A /* CORONAWriter */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8DBDAF1DD27E3951C13D60D0F108E88 /* Build configuration list for PBXNativeTarget "CORONAWriter" */;
@@ -318,24 +221,25 @@
 			);
 			name = CORONAWriter;
 			productName = CORONAWriter;
-			productReference = EE5C66BA414762ABB7D69669865B431D /* CORONAWriter.framework */;
+			productReference = 95A596413BA6D3A306BD844C0DFE708D /* CORONAWriter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F1D62A32E655BAC597EE24943935309B /* CORONAReader */ = {
+		62BD9F79EB5BCDFE8C81E86DB733DA60 /* Pods-wifiHelper-admin */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 22E4687DB9803391BB6ECD4610D17711 /* Build configuration list for PBXNativeTarget "CORONAReader" */;
+			buildConfigurationList = 064F2FA1D7523FF9B972E8E3B5697D9E /* Build configuration list for PBXNativeTarget "Pods-wifiHelper-admin" */;
 			buildPhases = (
-				F00B3829B6A2AD5B9742AA4A160C9FB5 /* Sources */,
-				34F710E2C08472DE41FC5A7D9FCCB4FD /* Frameworks */,
-				E77B749EC9DF9049402A427301AFD751 /* Headers */,
+				238ABEDB8460FA4B66F69E283E730AB4 /* Sources */,
+				DD281E0281BC0BED4F701AC7A31C2814 /* Frameworks */,
+				9EA728278363D9540110F92248FB1074 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2BD93A9FFACEC51E69C8413879E3BFE9 /* PBXTargetDependency */,
 			);
-			name = CORONAReader;
-			productName = CORONAReader;
-			productReference = C8F80023A75417C3C6CEB02DBA16B9EF /* CORONAReader.framework */;
+			name = "Pods-wifiHelper-admin";
+			productName = "Pods-wifiHelper-admin";
+			productReference = 7B7BBA41901B563A6BB18BDE78052EA2 /* Pods_wifiHelper_admin.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -345,7 +249,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0900;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -355,23 +259,22 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D58B4B1413A5D662C23F655CA17A5564 /* Products */;
+			productRefGroup = 84A9F89807F25685AF3E7A4CC1769E06 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1D62A32E655BAC597EE24943935309B /* CORONAReader */,
 				119BCB7B4F869A0700E94136B4AEE11A /* CORONAWriter */,
-				0ACA8D0F466949FE2FC7C1506C2740B1 /* Pods-wifiHelper-admin */,
+				62BD9F79EB5BCDFE8C81E86DB733DA60 /* Pods-wifiHelper-admin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		428FB23A34FFBEF7036638C2F2812089 /* Sources */ = {
+		238ABEDB8460FA4B66F69E283E730AB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A3FEC69C0F0A2263B853E3084C6CF5 /* Pods-wifiHelper-admin-dummy.m in Sources */,
+				C034A92DA6DF227F52698B720BA01E3B /* Pods-wifiHelper-admin-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,36 +289,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F00B3829B6A2AD5B9742AA4A160C9FB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDA9D1AC05FEB80C2CDC4FA7C979A0F9 /* CORONABTManager.swift in Sources */,
-				ACA9BC04D0D52D8B1DC35493F34A01BF /* CORONAManager.swift in Sources */,
-				6F03A0B2192257AC8390E94D561528F8 /* CORONAReader-dummy.m in Sources */,
-				20C9998C3E297CF1551D47374F20E879 /* NFCReader.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B400BA9592D8B1C2F8181C412B7E3577 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CORONAReader;
-			target = F1D62A32E655BAC597EE24943935309B /* CORONAReader */;
-			targetProxy = 273F69EF909F3E3DCE2A0244DBCAB86F /* PBXContainerItemProxy */;
-		};
-		E5FC3B10ED58D69DCA15782F535F0B57 /* PBXTargetDependency */ = {
+		2BD93A9FFACEC51E69C8413879E3BFE9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CORONAWriter;
 			target = 119BCB7B4F869A0700E94136B4AEE11A /* CORONAWriter */;
-			targetProxy = 5195627CAC1D6E8BD49F5E041A8B9C0F /* PBXContainerItemProxy */;
+			targetProxy = 56726B9B57FA28EEFB679F3D6FE0977D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00B7DCBB24434F1CC06B31C84913482C /* Release */ = {
+		000FBA1F1581B3B2335FF02D8E0704EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 22C76D3011FE17F368455F1577E8E06F /* Pods-wifiHelper-admin.release.xcconfig */;
 			buildSettings = {
@@ -463,7 +349,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -471,14 +359,20 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -499,7 +393,7 @@
 		};
 		219CD153E0ADFA44EBDAC66B4F59FE1D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C23EF00901A6D3BA0932371937C1355 /* CORONAWriter.xcconfig */;
+			baseConfigurationReference = 2D7D146D57BEE319F5FB712B3293DA78 /* CORONAWriter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -532,42 +426,7 @@
 			};
 			name = Release;
 		};
-		5AAE530BC9F17BF0EBFC522D05B34DF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 483AAE3BB3C3671BC3CA388CEA6B4FF7 /* CORONAReader.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CORONAReader/CORONAReader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CORONAReader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CORONAReader/CORONAReader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = CORONAReader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		733E1BD1BDDD9F47F2F23734618C3428 /* Debug */ = {
+		8437EF6482231A2510DE450E9FEA34A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5483F6D838D4ACB1122BEBEE696BD878 /* Pods-wifiHelper-admin.debug.xcconfig */;
 			buildSettings = {
@@ -606,41 +465,6 @@
 			};
 			name = Debug;
 		};
-		A47ACF5A4F3B1DD4434C3C94D250A1D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 483AAE3BB3C3671BC3CA388CEA6B4FF7 /* CORONAReader.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CORONAReader/CORONAReader-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CORONAReader/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/CORONAReader/CORONAReader.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = CORONAReader;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -651,7 +475,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -659,15 +485,21 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
@@ -692,7 +524,7 @@
 		};
 		D0408A9E0D0B799A8A4D8EF242B34F8E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C23EF00901A6D3BA0932371937C1355 /* CORONAWriter.xcconfig */;
+			baseConfigurationReference = 2D7D146D57BEE319F5FB712B3293DA78 /* CORONAWriter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -728,11 +560,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		22E4687DB9803391BB6ECD4610D17711 /* Build configuration list for PBXNativeTarget "CORONAReader" */ = {
+		064F2FA1D7523FF9B972E8E3B5697D9E /* Build configuration list for PBXNativeTarget "Pods-wifiHelper-admin" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A47ACF5A4F3B1DD4434C3C94D250A1D2 /* Debug */,
-				5AAE530BC9F17BF0EBFC522D05B34DF0 /* Release */,
+				8437EF6482231A2510DE450E9FEA34A4 /* Debug */,
+				000FBA1F1581B3B2335FF02D8E0704EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -742,15 +574,6 @@
 			buildConfigurations = (
 				BC80BBB5C066539FFFC0B2127CA5D3C4 /* Debug */,
 				1A41B15D3AA834993ADDD808FA9D8764 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		533A702AC4805D18FBA68D425274794C /* Build configuration list for PBXNativeTarget "Pods-wifiHelper-admin" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				733E1BD1BDDD9F47F2F23734618C3428 /* Debug */,
-				00B7DCBB24434F1CC06B31C84913482C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

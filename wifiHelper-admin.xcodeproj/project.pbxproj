@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1404A6F71F90D5F800CB3F31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404A6F61F90D5F800CB3F31 /* Extensions.swift */; };
 		14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB70791F90D14800839E21 /* AppDelegate.swift */; };
 		14BB707C1F90D14800839E21 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB707B1F90D14800839E21 /* TopController.swift */; };
 		14BB707F1F90D14800839E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB707D1F90D14800839E21 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		1404A6F51F90D32B00CB3F31 /* wifiHelper-admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "wifiHelper-admin.entitlements"; sourceTree = "<group>"; };
+		1404A6F61F90D5F800CB3F31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		14BB70761F90D14800839E21 /* wifiHelper-admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifiHelper-admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BB70791F90D14800839E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BB707B1F90D14800839E21 /* TopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				1404A6F51F90D32B00CB3F31 /* wifiHelper-admin.entitlements */,
 				14BB70791F90D14800839E21 /* AppDelegate.swift */,
 				14BB707B1F90D14800839E21 /* TopController.swift */,
+				1404A6F61F90D5F800CB3F31 /* Extensions.swift */,
 				14BB707D1F90D14800839E21 /* Main.storyboard */,
 				14BB70801F90D14800839E21 /* Assets.xcassets */,
 				14BB70821F90D14800839E21 /* LaunchScreen.storyboard */,
@@ -296,12 +299,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-wifiHelper-admin/Pods-wifiHelper-admin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CORONAReader/CORONAReader.framework",
 				"${BUILT_PRODUCTS_DIR}/CORONAWriter/CORONAWriter.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CORONAReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CORONAWriter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14BB707C1F90D14800839E21 /* TopController.swift in Sources */,
+				1404A6F71F90D5F800CB3F31 /* Extensions.swift in Sources */,
 				14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

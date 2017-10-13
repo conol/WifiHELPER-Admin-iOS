@@ -7,21 +7,50 @@
 //
 
 import UIKit
-import CORONAReader
 import CORONAWriter
 
-class TopController: UIViewController
+class TopController: UIViewController, CORONAManagerDelegate
 {
+    var coronaManager: CORONAManager?
+    @IBOutlet var NFCButton:UIButton!
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        NFCButton.clipsToBounds      = true
+        NFCButton.layer.cornerRadius = 4.0
+        NFCButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 0.2), for: .disabled)
+        NFCButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 1.0), for: .normal)
+        
+        coronaManager = CORONAManager(delegate: self)
+    }
+    
+    //CORONA Delegate
+    func coronaNFCDetected(deviceId: Data, serviceId: Data) -> Bool
+    {
+        return true
+    }
+    
+    func coronaNFCCanceled()
+    {
+        
+    }
+    
+    func coronaIllegalNFCDetected()
+    {
+        
+    }
+    
+    //Button Action
+    @IBAction func startNFC()
+    {
+        coronaManager?.startReadingNFC()
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

@@ -1,6 +1,0 @@
-framework module CORONAReader {
-  umbrella header "CORONAReader-umbrella.h"
-
-  export *
-  module * { export * }
-}
