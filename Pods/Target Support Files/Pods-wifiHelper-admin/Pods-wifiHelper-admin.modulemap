@@ -1,6 +1,0 @@
-framework module Pods_wifiHelper_admin {
-  umbrella header "Pods-wifiHelper-admin-umbrella.h"
-
-  export *
-  module * { export * }
-}
