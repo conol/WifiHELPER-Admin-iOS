@@ -11,8 +11,13 @@ import CORONAWriter
 
 class TopController: UIViewController, CORONAManagerDelegate
 {
+    var jsonData: [String: Any]?
+    var wifi: [String: Any]?
+    
     var coronaManager: CORONAManager?
-    @IBOutlet var NFCButton:UIButton!
+    
+    @IBOutlet var logoView: UIImageView!
+    @IBOutlet var NFCButton: UIButton!
 
     override func viewDidLoad()
     {
@@ -29,13 +34,31 @@ class TopController: UIViewController, CORONAManagerDelegate
     //CORONA Delegate
     func coronaNFCDetected(deviceId: String, type: Int, json: String) -> Bool
     {
-        let jsonDic = convertToDictionary(json)
-        return false
+        if type == 1 {
+            jsonData = convertToDictionary(json)
+            wifi     = jsonData?["wifi"] as? [String: Any]
+            
+            if (wifi != nil && 1 < (wifi?.count)!) {
+                changeSettingMode()
+                return true
+                
+            } else {
+                Alert.show(title: "Wi-Fi HELPER未設定", message: "タッチしたNFCにはWi-Fi HELPERの\n設定がありません")
+                return false
+            }
+        } else {
+            return false
+        }
     }
     
     func coronaNFCCanceled()
     {
-        
+        let frame = logoView.frame
+        UIView.animate(withDuration: 0.7, delay: 0.0, options: .curveEaseOut, animations: {
+            self.logoView.frame = CGRect(x: frame.origin.x, y: frame.origin.y - 50, width: frame.size.width, height: frame.size.height)
+        }) { (success) in
+            
+        }
     }
     
     func coronaIllegalNFCDetected()
@@ -54,6 +77,11 @@ class TopController: UIViewController, CORONAManagerDelegate
             }
         }
         return nil
+    }
+    
+    func changeSettingMode()
+    {
+        
     }
     
     //Button Action

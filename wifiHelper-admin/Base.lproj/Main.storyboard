@@ -44,6 +44,7 @@
                     </view>
                     <connections>
                         <outlet property="NFCButton" destination="RXs-Hr-pwD" id="yPi-fr-Wf2"/>
+                        <outlet property="logoView" destination="gVZ-eO-HUg" id="dgV-kc-GWL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
