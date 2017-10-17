@@ -3,6 +3,19 @@ import Foundation
 private let CORONA_SCAN_SIGNATURE_LENGTH = 10
 private let CORONA_SCAN_SIGNATURE_PREFIX_LENGTH = 3
 
+public let CORONA_TAG_TYPE_UNKNOWN = 0
+public let CORONA_TAG_TYPE_CORONA = 1
+public let CORONA_TAG_TYPE_SEAL = 2
+
+private func tagTypeFromDeviceId(_ deviceId: Data?) -> Int {
+    if let deviceId = deviceId {
+        let firstByte = Array(deviceId)[0]
+        if firstByte == 0x04 { return CORONA_TAG_TYPE_SEAL }
+        if firstByte == 0x02 { return CORONA_TAG_TYPE_CORONA }
+    }
+    return CORONA_TAG_TYPE_UNKNOWN
+}
+
 private func CORONAGetDebugMode() -> Bool {
     if let infoDirecgory = Bundle.main.infoDictionary,
         let v = infoDirecgory["CORONAManager.debug"],
@@ -119,9 +132,9 @@ public struct CORONAWiFiSSIDPw {
 }
 
 @objc public protocol CORONAManagerDelegate: class {
+
     // card detection
-    
-    func coronaNFCDetected(deviceId: Data, serviceId: Data) -> Bool
+    func coronaNFCDetected(deviceId: String, type: Int, json: String) -> Bool
     func coronaNFCCanceled()
     func coronaIllegalNFCDetected()
 
@@ -136,7 +149,7 @@ public struct CORONAWiFiSSIDPw {
     @objc optional func coronaUpdatedServerHost(_ hostName: String)
     @objc optional func coronaUpdatedServerPath(_ path: String)
     @objc optional func coronaUpdatedNetResponse(code: Int, message: String)
-    @objc optional func coronaUpdatedServiceID()
+    @objc optional func coronaUpdatedJSON()
 
     // OTA status update
     @objc optional func coronaUpdateOTAStatus(_ status: CORONAOTAStatus)
@@ -152,7 +165,7 @@ public class CORONAManager: NFCReaderDelegate {
     
     var scanSignature: Data?
     var deviceId: Data?
-    var serviceId: Data?
+    var jsonData: Data?
     var anyNfcRead: Bool = false
     
     public init(delegate: CORONAManagerDelegate) {
@@ -196,8 +209,12 @@ public class CORONAManager: NFCReaderDelegate {
         return CORONABTManager.shared.requestOTAUpdate(force: force)
     }
     
-    public func writeNFCServiceID(_ data: Data) -> Bool {
-        return CORONABTManager.shared.writeNFCServiceID(data)
+    public func writeJSON(_ json: String) -> Bool {
+        if let data = json.data(using: .utf8) {
+            return CORONABTManager.shared.writePlainJSON(data)
+        } else {
+            return false
+        }
     }
     
     // NFCReaderDelegate
@@ -210,14 +227,19 @@ public class CORONAManager: NFCReaderDelegate {
     func nfcReaderFoundCORONARecord(_ data: Data) {
         scanSignature = data.prefix(upTo: CORONA_SCAN_SIGNATURE_LENGTH)
         deviceId  = scanSignature!.suffix(from: CORONA_SCAN_SIGNATURE_PREFIX_LENGTH)
-        serviceId = data.suffix(from: CORONA_SCAN_SIGNATURE_LENGTH)
+        jsonData = data.suffix(from: CORONA_SCAN_SIGNATURE_LENGTH)
     }
     
     func nfcReaderDone() {
         nfc = nil
         if let scanSignature = scanSignature {
-            if  delegate?.coronaNFCDetected(deviceId: deviceId!,
-                                          serviceId: serviceId!) ?? false {
+            let devIdString = deviceId!.map {
+                String(format: "%02hhx", $0) }.joined()
+            let json = String(data: jsonData!, encoding: .utf8) ?? ""
+            if  delegate?.coronaNFCDetected(deviceId: devIdString,
+                                        type: tagTypeFromDeviceId(deviceId),
+                                        json: json)
+                ?? false {
                 CORONABTManager.shared.delegate = delegate
                 CORONABTManager.shared.startScanning(scanSignature)
             }

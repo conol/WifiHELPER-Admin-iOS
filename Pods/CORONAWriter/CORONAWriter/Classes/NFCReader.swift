@@ -1,7 +1,17 @@
 import UIKit
 import CoreNFC
 
-private let CORONA_TAG_TYPE = "CORONA"
+private let CORONA_TAG_TYPE = "conol.jp:CORONA"
+private let CORONA_TAG_TYPE_COMPAT = "conol.co.jp:cnfc_bt_manu_data"
+
+private func match_tag_type(_ type: String) -> Bool {
+    if type == CORONA_TAG_TYPE || type == CORONA_TAG_TYPE_COMPAT {
+        return true
+    } else {
+        return false
+    }
+}
+
 private let CORONA_MAGIC_1 = 0x63
 private let CORONA_MAGIC_2 = 0x6f
 
@@ -105,7 +115,7 @@ class NFCReader: NSObject, NFCNDEFReaderSessionDelegate {
                     let s = "type=\(typeName) payload=\(record.payload)"
                     CORONADebugPrint(s)
                     delegate?.nfcReaderGotRecord(s)
-                    if typeName == CORONA_TAG_TYPE && payload.count > 3 &&
+                    if match_tag_type(typeName) && payload.count > 3 &&
                         payload[0] == CORONA_MAGIC_1 &&
                         payload[1] == CORONA_MAGIC_2 {
                         delegate?.nfcReaderFoundCORONARecord(payload)

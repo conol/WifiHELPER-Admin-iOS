@@ -1,6 +1,6 @@
 {
   "name": "CORONAWriter",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "summary": "コノル製デバイス専用書込ライブラリ",
   "description": "デバイスのNFC認証を開始後、Bluetoothを利用したデータ送受信、Wifi経由でのAPI利用などの各種機能を提供するライブラリです。",
   "homepage": "https://gitlab.conol.jp/IoT/CORONAWriter",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://gitlab.conol.jp/IoT/CORONAWriter.git",
-    "tag": "0.2.2"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "11.0"

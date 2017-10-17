@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,14 +47,14 @@
 		331EE774C672C8907C36234C94917A36 /* Pods-wifiHelper-admin-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wifiHelper-admin-resources.sh"; sourceTree = "<group>"; };
 		5483F6D838D4ACB1122BEBEE696BD878 /* Pods-wifiHelper-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-wifiHelper-admin.debug.xcconfig"; sourceTree = "<group>"; };
 		5BBEF8D3CB218AA775C87917F0E0EB91 /* Pods-wifiHelper-admin-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-wifiHelper-admin-frameworks.sh"; sourceTree = "<group>"; };
-		689FD895E6806200BABCBEAD99409FA2 /* Pods-wifiHelper-admin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-wifiHelper-admin.modulemap"; sourceTree = "<group>"; };
+		689FD895E6806200BABCBEAD99409FA2 /* Pods-wifiHelper-admin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-wifiHelper-admin.modulemap"; sourceTree = "<group>"; };
 		71EE1BD31D120A3088885C8467316927 /* Pods-wifiHelper-admin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-wifiHelper-admin-acknowledgements.plist"; sourceTree = "<group>"; };
-		7B7BBA41901B563A6BB18BDE78052EA2 /* Pods_wifiHelper_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wifiHelper_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B7BBA41901B563A6BB18BDE78052EA2 /* Pods_wifiHelper_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_wifiHelper_admin.framework; path = "Pods-wifiHelper-admin.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B036C99CA98C0A9FBFAEFEF45FA2904 /* Pods-wifiHelper-admin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-wifiHelper-admin-umbrella.h"; sourceTree = "<group>"; };
 		8D48C1C8E39FE4E38191FC42B32E5FEB /* CORONAManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CORONAManager.swift; path = CORONAWriter/Classes/CORONAManager.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95A596413BA6D3A306BD844C0DFE708D /* CORONAWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CORONAWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C47A2648DA0272A32EC46AB6FB63967D /* CORONAWriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = CORONAWriter.modulemap; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95A596413BA6D3A306BD844C0DFE708D /* CORONAWriter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CORONAWriter.framework; path = CORONAWriter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47A2648DA0272A32EC46AB6FB63967D /* CORONAWriter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = CORONAWriter.modulemap; sourceTree = "<group>"; };
 		CB945A989B20718B683C2972B0A23D71 /* Pods-wifiHelper-admin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-wifiHelper-admin-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D0AA07926CA7A8016E150A5832A55D35 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DA190868AEC68A2F6165EEE497941582 /* CORONAWriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CORONAWriter-dummy.m"; sourceTree = "<group>"; };
@@ -173,6 +173,7 @@
 				2D03EE2CF07A49E9AD2DB425F1DC18FF /* NFCReader.swift */,
 				7B12F1F505B07F982058309BDF764D2C /* Support Files */,
 			);
+			name = CORONAWriter;
 			path = CORONAWriter;
 			sourceTree = "<group>";
 		};
@@ -249,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -349,9 +350,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -359,20 +358,14 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -475,9 +468,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -485,21 +476,15 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",

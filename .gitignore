@@ -30,3 +30,4 @@ Pods/*
 .bundle
 vendor
 /fastlane/report.xml
+/.DS_Store

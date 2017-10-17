@@ -10,7 +10,7 @@ let CORONA_CHAR_UUID_SERVER_PATH: UInt16   = 0xff04
 let CORONA_CHAR_UUID_NET_REQUEST: UInt16   = 0xff05
 let CORONA_CHAR_UUID_NET_RESPONSE: UInt16  = 0xff06
 let CORONA_CHAR_UUID_OTA_CTRL: UInt16      = 0xff07
-let CORONA_CHAR_UUID_SERVICE_ID: UInt16    = 0xff08
+let CORONA_CHAR_UUID_PLAIN_JSON: UInt16    = 0xff08
 
 let CORONA_OTA_REQ_NORMAL: [UInt8]         = [ 0x00, 0x01 ]
 let CORONA_OTA_REQ_FORCE: [UInt8]          = [ 0x00, 0x03 ]
@@ -52,7 +52,7 @@ class CORONABTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
     var CORONANetRequestChar: CBCharacteristic?
     var CORONANetResponseChar: CBCharacteristic?
     var CORONAOTACtrlChar: CBCharacteristic?
-    var CORONAServiceIDChar: CBCharacteristic?
+    var CORONAPlainJSONChar: CBCharacteristic?
     
     var writeWiFiValue: CORONAWiFiSSIDPw?
     var writeHostValue: String?
@@ -151,9 +151,9 @@ class CORONABTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
         return true
     }
     
-    func writeNFCServiceID(_ data: Data) -> Bool {
+    func writePlainJSON(_ data: Data) -> Bool {
         guard let peripheral = currentPeripheral,
-            let char = CORONAServiceIDChar else {
+            let char = CORONAPlainJSONChar else {
                 return false
         }
         peripheral.writeValue(data, for: char, type: .withResponse)
@@ -184,7 +184,8 @@ class CORONABTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
                         didDiscover peripheral: CBPeripheral,
                         advertisementData: [String : Any],
                         rssi RSSI: NSNumber) {
-        if (peripheral.name ?? "") == "CORONA1" {
+        let pname = peripheral.name ?? ""
+        if pname == "CORONA1" || pname == "CNFC1" {
             CORONADebugPrint("didDiscover: peripheral: \(peripheral), RSSI=\(RSSI)")
             CORONADebugPrint("  advertisementData=\(advertisementData)")
             let key = CBAdvertisementDataManufacturerDataKey
@@ -268,8 +269,8 @@ class CORONABTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
                     CORONAOTACtrlChar = char
                     peripheral.setNotifyValue(true, for: char)
                     peripheral.readValue(for: char)
-                } else if uuid16equal(char.uuid, CORONA_CHAR_UUID_SERVICE_ID) {
-                    CORONAServiceIDChar = char
+                } else if uuid16equal(char.uuid, CORONA_CHAR_UUID_PLAIN_JSON) {
+                    CORONAPlainJSONChar = char
                 }
             }
         }
@@ -370,8 +371,8 @@ class CORONABTManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate 
             }
         } else if uuid16equal(characteristic.uuid, CORONA_CHAR_UUID_OTA_CTRL) {
             delegate?.coronaUpdateOTAStatus?(.updating)
-        } else if uuid16equal(characteristic.uuid, CORONA_CHAR_UUID_SERVICE_ID) {
-            delegate?.coronaUpdatedServiceID?()
+        } else if uuid16equal(characteristic.uuid, CORONA_CHAR_UUID_PLAIN_JSON) {
+            delegate?.coronaUpdatedJSON?()
         }
     }
 

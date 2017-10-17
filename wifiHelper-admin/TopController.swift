@@ -27,9 +27,10 @@ class TopController: UIViewController, CORONAManagerDelegate
     }
     
     //CORONA Delegate
-    func coronaNFCDetected(deviceId: Data, serviceId: Data) -> Bool
+    func coronaNFCDetected(deviceId: String, type: Int, json: String) -> Bool
     {
-        return true
+        let jsonDic = convertToDictionary(json)
+        return false
     }
     
     func coronaNFCCanceled()
@@ -40,6 +41,19 @@ class TopController: UIViewController, CORONAManagerDelegate
     func coronaIllegalNFCDetected()
     {
         
+    }
+    
+    //String->NSDictionary
+    func convertToDictionary(_ text: String) -> [String: Any]?
+    {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
     }
     
     //Button Action

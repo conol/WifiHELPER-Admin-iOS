@@ -1,5 +1,5 @@
 PODS:
-  - CORONAWriter (0.2.2)
+  - CORONAWriter (0.3.0)
 
 DEPENDENCIES:
   - CORONAWriter (from `https://gitlab.conol.jp/IoT/CORONAWriter-iOS.git`, branch `develop`)
@@ -11,11 +11,11 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   CORONAWriter:
-    :commit: ba5f0a735dacf5e041df7965b5d60cd9c11b00d2
+    :commit: 99502bba7f4ea56cb725ca23d5e35ac6cae40620
     :git: https://gitlab.conol.jp/IoT/CORONAWriter-iOS.git
 
 SPEC CHECKSUMS:
-  CORONAWriter: a3511e1412d37924b1401aa724aaf314463d63b1
+  CORONAWriter: da696edf750a31d376c691858391c679bd88be5b
 
 PODFILE CHECKSUM: e9eff5a571cc7fd2281747fa2834c08ad1adf95c
 
