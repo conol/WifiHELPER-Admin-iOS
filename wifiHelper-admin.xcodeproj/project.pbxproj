@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1404A6F71F90D5F800CB3F31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404A6F61F90D5F800CB3F31 /* Extensions.swift */; };
+		145750DD1FB19DAF000C0C96 /* WifiHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; };
+		145750DF1FB1A1D4000C0C96 /* WifiHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		14B824A71FB9E7C60097050B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824A61FB9E7C60097050B /* SettingViewController.swift */; };
 		14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB70791F90D14800839E21 /* AppDelegate.swift */; };
 		14BB707C1F90D14800839E21 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB707B1F90D14800839E21 /* TopController.swift */; };
 		14BB707F1F90D14800839E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB707D1F90D14800839E21 /* Main.storyboard */; };
@@ -15,7 +18,6 @@
 		14BB70841F90D14800839E21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB70821F90D14800839E21 /* LaunchScreen.storyboard */; };
 		14BB708F1F90D14900839E21 /* wifiHelper_adminTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB708E1F90D14900839E21 /* wifiHelper_adminTests.swift */; };
 		14BB709A1F90D14900839E21 /* wifiHelper_adminUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB70991F90D14900839E21 /* wifiHelper_adminUITests.swift */; };
-		8E82C143C295548E50BD5724 /* Pods_wifiHelper_admin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6CB6628E957D10AF44A6A2 /* Pods_wifiHelper_admin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +37,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		145750E01FB1A1D4000C0C96 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				145750DF1FB1A1D4000C0C96 /* WifiHelper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1404A6F51F90D32B00CB3F31 /* wifiHelper-admin.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "wifiHelper-admin.entitlements"; sourceTree = "<group>"; };
 		1404A6F61F90D5F800CB3F31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		145750DC1FB19DAE000C0C96 /* WifiHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WifiHelper.framework; path = "wifiHelper-admin/WifiHelper.framework"; sourceTree = "<group>"; };
+		14B824A61FB9E7C60097050B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		14BB70761F90D14800839E21 /* wifiHelper-admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifiHelper-admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BB70791F90D14800839E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BB707B1F90D14800839E21 /* TopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
@@ -51,9 +69,6 @@
 		14BB70951F90D14900839E21 /* wifiHelper-adminUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "wifiHelper-adminUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BB70991F90D14900839E21 /* wifiHelper_adminUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wifiHelper_adminUITests.swift; sourceTree = "<group>"; };
 		14BB709B1F90D14900839E21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E69509932BC176AE881A670 /* Pods-wifiHelper-admin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wifiHelper-admin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wifiHelper-admin/Pods-wifiHelper-admin.debug.xcconfig"; sourceTree = "<group>"; };
-		B4F53C8BEF46A087E94855FD /* Pods-wifiHelper-admin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wifiHelper-admin.release.xcconfig"; path = "Pods/Target Support Files/Pods-wifiHelper-admin/Pods-wifiHelper-admin.release.xcconfig"; sourceTree = "<group>"; };
-		DB6CB6628E957D10AF44A6A2 /* Pods_wifiHelper_admin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wifiHelper_admin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E82C143C295548E50BD5724 /* Pods_wifiHelper_admin.framework in Frameworks */,
+				145750DD1FB19DAF000C0C96 /* WifiHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +104,6 @@
 				14BB708D1F90D14900839E21 /* wifiHelper-adminTests */,
 				14BB70981F90D14900839E21 /* wifiHelper-adminUITests */,
 				14BB70771F90D14800839E21 /* Products */,
-				3A97CF0E257E9883FCCFB3A3 /* Pods */,
 				467D943E64C68C37242CBDBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +124,7 @@
 				1404A6F51F90D32B00CB3F31 /* wifiHelper-admin.entitlements */,
 				14BB70791F90D14800839E21 /* AppDelegate.swift */,
 				14BB707B1F90D14800839E21 /* TopController.swift */,
+				14B824A61FB9E7C60097050B /* SettingViewController.swift */,
 				1404A6F61F90D5F800CB3F31 /* Extensions.swift */,
 				14BB707D1F90D14800839E21 /* Main.storyboard */,
 				14BB70801F90D14800839E21 /* Assets.xcassets */,
@@ -137,19 +152,10 @@
 			path = "wifiHelper-adminUITests";
 			sourceTree = "<group>";
 		};
-		3A97CF0E257E9883FCCFB3A3 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8E69509932BC176AE881A670 /* Pods-wifiHelper-admin.debug.xcconfig */,
-				B4F53C8BEF46A087E94855FD /* Pods-wifiHelper-admin.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		467D943E64C68C37242CBDBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DB6CB6628E957D10AF44A6A2 /* Pods_wifiHelper_admin.framework */,
+				145750DC1FB19DAE000C0C96 /* WifiHelper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,12 +167,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14BB709E1F90D14900839E21 /* Build configuration list for PBXNativeTarget "wifiHelper-admin" */;
 			buildPhases = (
-				EBF411BE7BE881E16F9E708D /* [CP] Check Pods Manifest.lock */,
 				14BB70721F90D14800839E21 /* Sources */,
 				14BB70731F90D14800839E21 /* Frameworks */,
 				14BB70741F90D14800839E21 /* Resources */,
-				0037CE7CEA7C2E579ECA881F /* [CP] Embed Pods Frameworks */,
-				B08A5F5473E50DEEEC63CB25 /* [CP] Copy Pods Resources */,
+				145750E01FB1A1D4000C0C96 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -291,60 +295,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		0037CE7CEA7C2E579ECA881F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-wifiHelper-admin/Pods-wifiHelper-admin-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CORONAWriter/CORONAWriter.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CORONAWriter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wifiHelper-admin/Pods-wifiHelper-admin-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B08A5F5473E50DEEEC63CB25 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wifiHelper-admin/Pods-wifiHelper-admin-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EBF411BE7BE881E16F9E708D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-wifiHelper-admin-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		14BB70721F90D14800839E21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -353,6 +303,7 @@
 				14BB707C1F90D14800839E21 /* TopController.swift in Sources */,
 				1404A6F71F90D5F800CB3F31 /* Extensions.swift in Sources */,
 				14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */,
+				14B824A71FB9E7C60097050B /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,12 +467,15 @@
 		};
 		14BB709F1F90D14900839E21 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E69509932BC176AE881A670 /* Pods-wifiHelper-admin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "wifiHelper-admin/wifiHelper-admin.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68WVY52GZ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wifiHelper-admin",
+				);
 				INFOPLIST_FILE = "wifiHelper-admin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.conol.apps.wifiHelper-admin";
@@ -533,12 +487,15 @@
 		};
 		14BB70A01F90D14900839E21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B4F53C8BEF46A087E94855FD /* Pods-wifiHelper-admin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "wifiHelper-admin/wifiHelper-admin.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68WVY52GZ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wifiHelper-admin",
+				);
 				INFOPLIST_FILE = "wifiHelper-admin/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.conol.apps.wifiHelper-admin";

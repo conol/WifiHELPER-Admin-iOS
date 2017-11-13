@@ -1,0 +1,11 @@
+framework module WifiHelper {
+  umbrella header "WifiHelper.h"
+
+  export *
+  module * { export * }
+}
+
+module WifiHelper.Swift {
+    header "WifiHelper-Swift.h"
+    requires objc
+}
