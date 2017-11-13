@@ -11,6 +11,8 @@
 		145750DD1FB19DAF000C0C96 /* WifiHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; };
 		145750DF1FB1A1D4000C0C96 /* WifiHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14B824A71FB9E7C60097050B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824A61FB9E7C60097050B /* SettingViewController.swift */; };
+		14B824A91FB9EC540097050B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824A81FB9EC540097050B /* LoginController.swift */; };
+		14B824AB1FB9EE090097050B /* ComplateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824AA1FB9EE090097050B /* ComplateController.swift */; };
 		14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB70791F90D14800839E21 /* AppDelegate.swift */; };
 		14BB707C1F90D14800839E21 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB707B1F90D14800839E21 /* TopController.swift */; };
 		14BB707F1F90D14800839E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB707D1F90D14800839E21 /* Main.storyboard */; };
@@ -56,6 +58,8 @@
 		1404A6F61F90D5F800CB3F31 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		145750DC1FB19DAE000C0C96 /* WifiHelper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WifiHelper.framework; path = "wifiHelper-admin/WifiHelper.framework"; sourceTree = "<group>"; };
 		14B824A61FB9E7C60097050B /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		14B824A81FB9EC540097050B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		14B824AA1FB9EE090097050B /* ComplateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplateController.swift; sourceTree = "<group>"; };
 		14BB70761F90D14800839E21 /* wifiHelper-admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifiHelper-admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BB70791F90D14800839E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BB707B1F90D14800839E21 /* TopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 				14BB70791F90D14800839E21 /* AppDelegate.swift */,
 				14BB707B1F90D14800839E21 /* TopController.swift */,
 				14B824A61FB9E7C60097050B /* SettingViewController.swift */,
+				14B824A81FB9EC540097050B /* LoginController.swift */,
+				14B824AA1FB9EE090097050B /* ComplateController.swift */,
 				1404A6F61F90D5F800CB3F31 /* Extensions.swift */,
 				14BB707D1F90D14800839E21 /* Main.storyboard */,
 				14BB70801F90D14800839E21 /* Assets.xcassets */,
@@ -302,8 +308,10 @@
 			files = (
 				14BB707C1F90D14800839E21 /* TopController.swift in Sources */,
 				1404A6F71F90D5F800CB3F31 /* Extensions.swift in Sources */,
+				14B824AB1FB9EE090097050B /* ComplateController.swift in Sources */,
 				14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */,
 				14B824A71FB9E7C60097050B /* SettingViewController.swift in Sources */,
+				14B824A91FB9EC540097050B /* LoginController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
