@@ -10,15 +10,26 @@ import UIKit
 
 class ComplateController: UIViewController {
 
+    @IBOutlet var CompButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        CompButton.clipsToBounds      = true
+        CompButton.layer.cornerRadius = 4.0
+        CompButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 0.2), for: .disabled)
+        CompButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 1.0), for: .normal)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func goBack()
+    {
+        let view = self.storyboard?.instantiateViewController(withIdentifier: "first")
+        navigationController?.popToViewController(view!, animated: true)
     }
     
 

@@ -29,7 +29,7 @@
         <!--Login Controller-->
         <scene sceneID="exu-c9-KOr">
             <objects>
-                <viewController id="fpr-jh-tbG" customClass="LoginController" customModule="wifiHelper_admin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="login" id="fpr-jh-tbG" customClass="LoginController" customModule="wifiHelper_admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hrt-Pa-Avs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,24 +45,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレスを入力してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ec2-yn-UOv">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="t.mizota@conol.jp" borderStyle="roundedRect" placeholder="メールアドレスを入力してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ec2-yn-UOv">
                                 <rect key="frame" x="46" y="445" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワードを入力してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jR5-Ac-uYI">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="p19801202A" borderStyle="roundedRect" placeholder="パスワードを入力してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jR5-Ac-uYI">
                                 <rect key="frame" x="46" y="489" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="send" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8m-CI-9aA">
                                 <rect key="frame" x="46" y="549" width="282" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="ログインする"/>
+                                <state key="normal" title="ログインする">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="doLogin" destination="fpr-jh-tbG" eventType="touchUpInside" id="Xkp-No-bwz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gVj-O0-NHA">
                                 <rect key="frame" x="118" y="622" width="138" height="30"/>
@@ -73,19 +78,34 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="1gY-Vt-jhf"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fmw-b5-Bsx" appends="YES" id="qbf-Sm-8Ie"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="fZS-wO-RhP"/>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="LoginButton" destination="b8m-CI-9aA" id="95m-DJ-skY"/>
+                        <outlet property="inputEmail" destination="Ec2-yn-UOv" id="sUc-ua-wDV"/>
+                        <outlet property="inputPassWord" destination="jR5-Ac-uYI" id="qXc-XT-Be0"/>
+                        <outlet property="logoView" destination="CXg-2i-Tk3" id="sTZ-B5-2Hp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vW7-Wx-1dw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fmw-b5-Bsx">
+                    <connections>
+                        <action selector="hideKeyboard" destination="fpr-jh-tbG" id="bdP-7h-OqB"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-396" y="134"/>
         </scene>
         <!--Top Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TopController" customModule="wifiHelper_admin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="first" id="BYZ-38-t0r" customClass="TopController" customModule="wifiHelper_admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,22 +176,22 @@
                                 <rect key="frame" x="46" y="397" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="パスワードを入力してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FRc-p0-vvr">
                                 <rect key="frame" x="46" y="441" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="password"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="日数を選択してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ1-eW-Kac">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="日数を選択してください" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ1-eW-Kac" customClass="PickerTextField" customModule="wifiHelper_admin" customModuleProvider="target">
                                 <rect key="frame" x="46" y="536" width="282" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="FOQ-vG-J0A">
                                 <rect key="frame" x="46" y="491" width="282" height="29"/>
@@ -185,7 +205,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jw7-zR-vxp">
                                 <rect key="frame" x="46" y="592" width="282" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="NFCリーダーを起動する"/>
+                                <state key="normal" title="NFCリーダーを起動する">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startNFC" destination="70n-dA-phJ" eventType="touchUpInside" id="dgs-Tq-LhS"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cuona" translatesAutoresizingMaskIntoConstraints="NO" id="exR-XJ-5qO">
                                 <rect key="frame" x="122" y="179" width="130" height="105"/>
@@ -193,17 +218,33 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="nNR-HN-9ph"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="P0U-D1-7b9" appends="YES" id="o8b-to-w89"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="InputDAYS" destination="ZZ1-eW-Kac" id="l91-x4-99i"/>
+                        <outlet property="InputPASS" destination="FRc-p0-vvr" id="gT0-vu-va8"/>
+                        <outlet property="InputSSID" destination="3Ne-C3-GR3" id="nee-6H-TZ4"/>
+                        <outlet property="NFCButton" destination="Jw7-zR-vxp" id="AZf-CG-y3H"/>
+                        <outlet property="SelectTYPE" destination="FOQ-vG-J0A" id="AsE-G5-Rge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qaY-Aa-OeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="P0U-D1-7b9">
+                    <connections>
+                        <action selector="hideKeyboard" destination="70n-dA-phJ" id="IXj-Jo-vUS"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="952.79999999999995" y="133.5832083958021"/>
         </scene>
         <!--Complate Controller-->
         <scene sceneID="EPr-4N-OQJ">
             <objects>
-                <viewController storyboardIdentifier="setting" id="Ha6-wJ-4Y1" customClass="ComplateController" customModule="wifiHelper_admin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="complate" id="Ha6-wJ-4Y1" customClass="ComplateController" customModule="wifiHelper_admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yKy-lX-MtH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,7 +270,12 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5BO-Ug-IZi">
                                 <rect key="frame" x="46" y="592" width="282" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="最初の画面へ戻る"/>
+                                <state key="normal" title="最初の画面へ戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="goBack" destination="Ha6-wJ-4Y1" eventType="touchUpInside" id="H38-jl-oBy"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cuona" translatesAutoresizingMaskIntoConstraints="NO" id="Sdn-jR-wkW">
                                 <rect key="frame" x="122" y="179" width="130" height="105"/>
@@ -295,6 +341,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lEf-DS-5za"/>
                     </view>
+                    <connections>
+                        <outlet property="CompButton" destination="5BO-Ug-IZi" id="EbX-Xc-5jq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMZ-n1-9PD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

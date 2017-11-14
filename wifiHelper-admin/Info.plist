@@ -36,5 +36,10 @@
 	</array>
 	<key>NFCReaderUsageDescription</key>
 	<string>Use the cuona systems.</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>

@@ -41,8 +41,12 @@ class TopController: UIViewController, WifiHelperDelegate
     
     func successScan()
     {
-        let view = storyboard?.instantiateViewController(withIdentifier: "setting")
-        navigationController?.pushViewController(view!, animated: true)
+        DispatchQueue.main.async {
+            let view = self.storyboard?.instantiateViewController(withIdentifier: "setting") as! SettingViewController
+            view.wifi = self.wifihelper?.wifi
+            view.device_id = self.wifihelper!.deviceId
+            self.navigationController?.pushViewController(view, animated: true)
+        }
     }
     
     func failedScan() {

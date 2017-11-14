@@ -257,6 +257,8 @@ SWIFT_CLASS("_TtC10WifiHelper10WifiHelper") SWIFT_AVAILABILITY(ios,introduced=11
 - (void)cuonaUpdatedJSON;
 - (void)successSendLogWithJson:(NSDictionary<NSString *, id> * _Nonnull)json;
 - (void)failedSendLogWithStatus:(NSInteger)status json:(NSDictionary<NSString *, id> * _Nonnull)json;
+- (void)successSignInJson:(NSDictionary<NSString *, id> * _Nonnull)json;
+- (void)failedSignInStatus:(NSInteger)status json:(NSDictionary<NSString *, id> * _Nonnull)json;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 @end
 
@@ -265,6 +267,11 @@ SWIFT_PROTOCOL("_TtP10WifiHelper18WifiHelperDelegate_")
 @protocol WifiHelperDelegate
 - (void)successScan;
 - (void)failedScan;
+@optional
+- (void)successSignInResponse:(NSDictionary<NSString *, id> * _Nonnull)response;
+- (void)failedSignInStatus:(NSInteger)status response:(NSDictionary<NSString *, id> * _Nonnull)response;
+- (void)successWrite;
+- (void)failedWrite;
 @end
 
 SWIFT_MODULE_NAMESPACE_POP

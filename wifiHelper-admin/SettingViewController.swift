@@ -7,29 +7,78 @@
 //
 
 import UIKit
+import WifiHelper
 
-class SettingViewController: UIViewController
+class SettingViewController: UIViewController, WifiHelperDelegate
 {
-    override func viewDidLoad() {
+    var wifi:Wifi?
+    var device_id:String?
+    var wifihelper:WifiHelper?
+    
+    @IBOutlet var NFCButton: UIButton!
+    @IBOutlet var InputSSID: UITextField!
+    @IBOutlet var InputPASS: UITextField!
+    @IBOutlet var SelectTYPE: UISegmentedControl!
+    @IBOutlet var InputDAYS: PickerTextField!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        wifihelper = WifiHelper(delegate: self)
+        wifihelper?.deviceId = device_id
+        
+        InputSSID.text = wifi?.ssid
+        InputPASS.text = wifi?.pass
+        SelectTYPE.selectedSegmentIndex = (wifi?.kind)!
+        InputDAYS.text = String(describing: (wifi?.days)!)
+        InputDAYS.setup(dataList: ["1","2","3"])
+        
+        NFCButton.clipsToBounds      = true
+        NFCButton.layer.cornerRadius = 4.0
+        NFCButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 0.2), for: .disabled)
+        NFCButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 1.0), for: .normal)
     }
 
-    override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning()
+    {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func hideKeyboard()
+    {
+        InputSSID.resignFirstResponder()
+        InputPASS.resignFirstResponder()
+        InputDAYS.resignFirstResponder()
     }
-    */
+    
+    @IBAction func startNFC()
+    {
+        wifihelper?.wifi.ssid = InputSSID.text
+        wifihelper?.wifi.pass = InputPASS.text
+        wifihelper?.wifi.kind = SelectTYPE.selectedSegmentIndex
+        wifihelper?.wifi.days = Int(InputDAYS.text!)!
+        wifihelper?.start(mode: .Write)
+    }
+    
+    //MARK: - デリゲート
+    func successScan() {
+        
+    }
+    
+    func failedScan() {
+        
+    }
+    
+    func successWrite() {
+        DispatchQueue.main.async {
+            let view = self.storyboard?.instantiateViewController(withIdentifier: "complate") as! ComplateController
+            self.navigationController?.pushViewController(view, animated: true)
+        }
+    }
+    
+    func failedWrite() {
+        Alert.show(title: "エラー", message: "書込失敗しました")
+    }
 
 }
