@@ -35,7 +35,13 @@ class SettingViewController: UIViewController, WifiHelperDelegate
             index = 0
         }
         SelectTYPE.selectedSegmentIndex = index
-        InputDAYS.text = String(describing: (wifi?.days)!)
+        
+        var choiceDay:String? = nil
+        let settingDay = wifi?.days ?? 0
+        if 0 < settingDay {
+            choiceDay = "\(settingDay)"
+        }
+        InputDAYS.text = choiceDay
         InputDAYS.setup(dataList: ["1","2","3"])
         
         NFCButton.clipsToBounds      = true
@@ -58,6 +64,10 @@ class SettingViewController: UIViewController, WifiHelperDelegate
     
     @IBAction func startNFC()
     {
+        if InputDAYS.text!.count == 0 {
+            Alert.show(title: "エラー", message: "日数を選択してください")
+            return
+        }
         wifihelper?.wifi.ssid = InputSSID.text
         wifihelper?.wifi.pass = InputPASS.text
         wifihelper?.wifi.kind = SelectTYPE.selectedSegmentIndex + 1
