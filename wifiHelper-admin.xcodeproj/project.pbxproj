@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1404A6F71F90D5F800CB3F31 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1404A6F61F90D5F800CB3F31 /* Extensions.swift */; };
-		145750DD1FB19DAF000C0C96 /* WifiHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; };
-		145750DF1FB1A1D4000C0C96 /* WifiHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14B824A71FB9E7C60097050B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824A61FB9E7C60097050B /* SettingViewController.swift */; };
 		14B824A91FB9EC540097050B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824A81FB9EC540097050B /* LoginController.swift */; };
 		14B824AB1FB9EE090097050B /* ComplateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824AA1FB9EE090097050B /* ComplateController.swift */; };
 		14B824AE1FBAC1970097050B /* PickerTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B824AD1FBAC1970097050B /* PickerTextField.swift */; };
+		14B825401FBC64200097050B /* WifiHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; };
+		14B825411FBC64200097050B /* WifiHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 145750DC1FB19DAE000C0C96 /* WifiHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		14BB707A1F90D14800839E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB70791F90D14800839E21 /* AppDelegate.swift */; };
 		14BB707C1F90D14800839E21 /* TopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BB707B1F90D14800839E21 /* TopController.swift */; };
 		14BB707F1F90D14800839E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BB707D1F90D14800839E21 /* Main.storyboard */; };
@@ -41,13 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		145750E01FB1A1D4000C0C96 /* Embed Frameworks */ = {
+		14B825421FBC64210097050B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				145750DF1FB1A1D4000C0C96 /* WifiHelper.framework in Embed Frameworks */,
+				14B825411FBC64200097050B /* WifiHelper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				145750DD1FB19DAF000C0C96 /* WifiHelper.framework in Frameworks */,
+				14B825401FBC64200097050B /* WifiHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +179,7 @@
 				14BB70721F90D14800839E21 /* Sources */,
 				14BB70731F90D14800839E21 /* Frameworks */,
 				14BB70741F90D14800839E21 /* Resources */,
-				145750E01FB1A1D4000C0C96 /* Embed Frameworks */,
+				14B825421FBC64210097050B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -492,6 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.conol.apps.wifiHelper-admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -512,6 +513,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.conol.apps.wifiHelper-admin";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

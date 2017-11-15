@@ -28,8 +28,7 @@ class ComplateController: UIViewController {
     
     @IBAction func goBack()
     {
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "first")
-        navigationController?.popToViewController(view!, animated: true)
+        navigationController?.popToRootViewController(animated: true)
     }
     
 

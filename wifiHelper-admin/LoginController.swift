@@ -28,7 +28,10 @@ class LoginController: UIViewController, WifiHelperDelegate
         LoginButton.layer.cornerRadius = 4.0
         LoginButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 0.2), for: .disabled)
         LoginButton.setBackgroundImage(UIImage.createColor("00318E", alpha: 1.0), for: .normal)
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool)
+    {
         if wifihelper!.hasToken() {
             successSignIn(response: [:])
         }
@@ -55,7 +58,7 @@ class LoginController: UIViewController, WifiHelperDelegate
             return
         }
         
-        wifihelper?.login(email: email, password: pass)
+        wifihelper?.signIn(email: email, password: pass)
     }
     
     func successScan() {

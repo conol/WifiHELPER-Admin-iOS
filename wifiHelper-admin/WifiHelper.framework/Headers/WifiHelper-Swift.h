@@ -265,9 +265,9 @@ SWIFT_CLASS("_TtC10WifiHelper10WifiHelper") SWIFT_AVAILABILITY(ios,introduced=11
 
 SWIFT_PROTOCOL("_TtP10WifiHelper18WifiHelperDelegate_")
 @protocol WifiHelperDelegate
+@optional
 - (void)successScan;
 - (void)failedScan;
-@optional
 - (void)successSignInResponse:(NSDictionary<NSString *, id> * _Nonnull)response;
 - (void)failedSignInStatus:(NSInteger)status response:(NSDictionary<NSString *, id> * _Nonnull)response;
 - (void)successWrite;
