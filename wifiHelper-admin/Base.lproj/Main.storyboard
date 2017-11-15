@@ -197,8 +197,8 @@
                                 <rect key="frame" x="46" y="491" width="282" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="WEP"/>
                                     <segment title="WPA/WPA2"/>
+                                    <segment title="WEP"/>
                                     <segment title="None"/>
                                 </segments>
                             </segmentedControl>

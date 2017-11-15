@@ -30,7 +30,11 @@ class SettingViewController: UIViewController, WifiHelperDelegate
         
         InputSSID.text = wifi?.ssid
         InputPASS.text = wifi?.pass
-        SelectTYPE.selectedSegmentIndex = (wifi?.kind)!
+        var index = (wifi?.kind)! - 1
+        if index < 0 {
+            index = 0
+        }
+        SelectTYPE.selectedSegmentIndex = index
         InputDAYS.text = String(describing: (wifi?.days)!)
         InputDAYS.setup(dataList: ["1","2","3"])
         
@@ -56,7 +60,7 @@ class SettingViewController: UIViewController, WifiHelperDelegate
     {
         wifihelper?.wifi.ssid = InputSSID.text
         wifihelper?.wifi.pass = InputPASS.text
-        wifihelper?.wifi.kind = SelectTYPE.selectedSegmentIndex
+        wifihelper?.wifi.kind = SelectTYPE.selectedSegmentIndex + 1
         wifihelper?.wifi.days = Int(InputDAYS.text!)!
         wifihelper?.start(mode: .Write)
     }
