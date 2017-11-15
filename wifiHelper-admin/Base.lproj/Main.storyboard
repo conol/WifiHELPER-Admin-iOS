@@ -289,7 +289,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2k-ju-eSe">
-                                <rect key="frame" x="180" y="400" width="58" height="24"/>
+                                <rect key="frame" x="180" y="400" width="101" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -303,7 +303,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kj-Wc-FFR">
-                                <rect key="frame" x="180" y="440" width="58" height="24"/>
+                                <rect key="frame" x="180" y="440" width="101" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -317,7 +317,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ye-OM-osa">
-                                <rect key="frame" x="180" y="480" width="58" height="24"/>
+                                <rect key="frame" x="180" y="480" width="101" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -331,7 +331,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RC4-aT-99i">
-                                <rect key="frame" x="180" y="520" width="58" height="24"/>
+                                <rect key="frame" x="180" y="520" width="94" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
@@ -343,15 +343,23 @@
                     </view>
                     <connections>
                         <outlet property="CompButton" destination="5BO-Ug-IZi" id="EbX-Xc-5jq"/>
+                        <outlet property="DAYSLabel" destination="tbo-xE-H0j" id="0eQ-wF-IHe"/>
+                        <outlet property="DAYSValue" destination="RC4-aT-99i" id="iKK-1m-dAM"/>
+                        <outlet property="PASSLabel" destination="1AC-z7-UIX" id="S8q-Zc-F4j"/>
+                        <outlet property="PASSValue" destination="1kj-Wc-FFR" id="1uo-8w-xZH"/>
+                        <outlet property="SSIDLabel" destination="Yk0-AA-r62" id="MEf-ue-Kzy"/>
+                        <outlet property="SSIDValue" destination="h2k-ju-eSe" id="Kd8-r4-lFy"/>
+                        <outlet property="TYPELabel" destination="2YM-Za-6iE" id="Fco-AC-50y"/>
+                        <outlet property="TYPEValue" destination="6ye-OM-osa" id="xhb-bV-Zgy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xMZ-n1-9PD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1625" y="134"/>
+            <point key="canvasLocation" x="1624.8" y="133.5832083958021"/>
         </scene>
     </scenes>
     <resources>
-        <image name="cuona" width="130" height="96"/>
+        <image name="cuona" width="130" height="105"/>
         <image name="logo" width="173" height="102"/>
     </resources>
 </document>

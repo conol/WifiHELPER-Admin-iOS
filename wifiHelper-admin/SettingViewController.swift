@@ -87,6 +87,7 @@ class SettingViewController: UIViewController, WifiHelperDelegate
     func successWrite() {
         DispatchQueue.main.async {
             let view = self.storyboard?.instantiateViewController(withIdentifier: "complate") as! ComplateController
+            view.wifi = self.wifihelper?.wifi
             self.navigationController?.pushViewController(view, animated: true)
         }
     }
